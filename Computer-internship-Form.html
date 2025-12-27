@@ -4,9 +4,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Internship Registration Form</title>
+  <link rel="icon" type="image/png" href="/assets/logocopy.png">
   <link rel="stylesheet" href="Computer-internship-Form.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  
 </head>
 <body>
+  <header id="header-container"></header>
   <section class="form-container">
     <form action="https://docs.google.com/forms/d/e/1FAIpQLSfcPLMevNupXEGkVO_XDbp_Tmu7S-FDFs39enON1KzERuagEw/formResponse" method="POST" class="job-form" novalidate>
       <h2 class="form-title">Internship Registration Form</h2>
@@ -204,6 +209,7 @@
         <label for="heard">How did you hear about us? *</label>
         <select id="heard" name="entry.672540910" required>
           <option value="">Select Option</option>
+          <option>Poster & Panaflex</option>
           <option>Facebook</option>
           <option>Instagram</option>
           <option>WhatsApp</option>
@@ -234,8 +240,16 @@
       <button type="submit" id="submitBtn" class="btn" disabled>Register Now</button>
     </form>
   </section>
+  <footer id="footer-container"></footer>
 
   <script>
+    
+    // Mobile Menu Toggle
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+
     // enable submit only when both checkboxes are checked
     const terms = document.getElementById('terms');
     const dataConfirm = document.getElementById('data-confirm');

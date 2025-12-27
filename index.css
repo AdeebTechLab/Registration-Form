@@ -1,27 +1,6 @@
-body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  background-color: #f5f8ff;
-  color: #333;
-}
 
-header {
-  background-color: #004aad;
-  color: white;
-  text-align: center;
-  padding: 40px 15px 30px;
-}
 
-header h1 {
-  margin-bottom: 8px;
-  font-size: 28px;
-}
 
-header p {
-  margin: 0;
-  font-size: 16px;
-  opacity: 0.9;
-}
 
 .info-section {
   display: flex;
@@ -123,44 +102,24 @@ header p {
   color: #444;
 }
 
-footer {
-  background-color: #004aad;
-  color: white;
-  padding: 20px;
-  margin-top: 40px;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.footer-column {
-  flex: 1;
-  text-align: left;
-  margin: 10px;
-}
-
-.footer-column h4 {
-  color: white;
-  margin-bottom: 10px;
-  font-size: 16px;
-}
-
-.copyright {
-  width: 100%;
+.announcement-header {
   text-align: center;
-  margin-top: 20px;
-  font-size: 14px;
+  padding: 40px 20px;
+  background: #f5f8ff;
+  margin-bottom: 20px;
 }
 
-@media (max-width: 768px) {
-  .info-section {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .info-card {
-    max-width: 90%;
-    min-height: auto;
-  }
+.announcement-header h1 {
+  color: #004aad;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
+
+.announcement-header p {
+  color: #666;
+  font-size: 1.2rem;
+}
+
+
+
 

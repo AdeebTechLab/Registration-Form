@@ -4,9 +4,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Computer Jobs Registration</title>
+  <link rel="icon" type="image/png" href="/assets/logocopy.png">
   <link rel="stylesheet" href="Computer-jobs-Form.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 </head>
 <body>
+  <header id="header-container"></header>
   <section class="form-container">
     <form action="https://docs.google.com/forms/d/e/1FAIpQLScExZ_pX2lmJ2MyfuJi7kIqlFUH1iKg9ifk9o3TI6g_cngZ_Q/formResponse" method="POST" class="job-form" novalidate>
       <h2 class="form-title">Computer Jobs Registration Form</h2>
@@ -130,6 +134,7 @@
           <label for="heardAbout">How did you hear about us? *</label>
           <select id="heardAbout" name="entry.514131289" required>
             <option value="">Select Option</option>
+            <option>Poster & Panaflex</option>
             <option>Facebook</option>
             <option>Instagram</option>
             <option>WhatsApp Group</option>
@@ -152,21 +157,29 @@
 </div>
 
 <button type="submit" id="submitBtn" disabled>Submit</button>
-
+  </section>
+  
   <script>
-  const terms = document.getElementById('terms');
-  const submitBtn = document.getElementById('submitBtn');
-
-  terms.addEventListener('change', () => {
-    if (terms.checked) {
-      submitBtn.disabled = false;
-      submitBtn.classList.add('enabled');
-    } else {
-      submitBtn.disabled = true;
-      submitBtn.classList.remove('enabled');
+   
+    // Mobile Menu Toggle
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
     }
-  });
-</script>
+
+    const terms = document.getElementById('terms');
+    const submitBtn = document.getElementById('submitBtn');
+
+    terms.addEventListener('change', () => {
+      if (terms.checked) {
+        submitBtn.disabled = false;
+        submitBtn.classList.add('enabled');
+      } else {
+        submitBtn.disabled = true;
+        submitBtn.classList.remove('enabled');
+      }
+    });
+  </script>
 
  </body>
 </html>

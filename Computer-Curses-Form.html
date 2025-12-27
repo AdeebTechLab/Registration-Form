@@ -4,9 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Computer Course Registration Form</title>
+  <link rel="icon" type="image/png" href="/assets/logocopy.png">
   <link rel="stylesheet" href="Computer-Curses-Form.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 </head>
 <body>
+  <header id="header-container"></header>
   <section class="form-container">
     <form action="https://docs.google.com/forms/d/e/1FAIpQLSeCQndZQsgwj4hIEuQx6oBfuYlNbf9gp9AMhGkz8sSJ36ergA/formResponse" method="POST">
       <h2>Computer Course Registration Form</h2>
@@ -149,6 +153,7 @@
           <label>How did you hear about us? *</label>
           <select name="entry.1662729089" required>
             <option value="">Select Option</option>
+            <option>Poster & Panaflex</option>
             <option>Facebook</option>
             <option>Instagram</option>
             <option>WhatsApp</option>
@@ -181,7 +186,15 @@
 
     </form>
   </section>
+  <footer id="footer-container"></footer>
   <script>
+    
+    // Mobile Menu Toggle
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+
        const terms = document.getElementById('terms');
     const dataConfirm = document.getElementById('data-confirm');
     const submitBtn = document.getElementById('submitBtn');
